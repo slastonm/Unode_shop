@@ -1,0 +1,469 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>UNO de 50</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="robots" content="index, follow" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+	
+	<link href="/css/popup.css" type="text/css"  rel="stylesheet" />
+    <link rel="stylesheet" media="screen" href="/css/style.css" type="text/css" />
+    <link rel="stylesheet" media="screen" href="/css/project.css" type="text/css" />
+    <link rel="stylesheet" media="screen" href="/slider.css" type="text/css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	
+	
+
+  <script src="/js/jquery.slides.min.js"></script>
+  <script>
+    $(function() {
+      $('#slides').slidesjs({
+        width: 940,
+        height: 600,
+		pagination: false,
+        navigation: false,
+		play: {
+          active: true,
+          auto: true,
+          interval: 4000,
+          swap: true
+        }
+      });
+    });
+  </script>
+  
+    <script type='text/javascript' src="/js/script.js"></script>
+    <script type='text/javascript' src="/js/project.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <script src='/js/jquery-ui-1.10.js'></script>
+    <script src="/js/jquery.cycle2.js"></script>
+    <script src="/js/jquery.cycle2.swipe.js"></script>
+    <script src="/js/jquery.maskedinput.js"></script>
+    <script src="/js/jquery.arcticmodal-0.3.js"></script>
+
+
+</head>
+<body>
+    
+        <div id="login_form">
+    		<div id="login_content">
+				<div class="error">
+					<p>Неверный номер карты или пароль</p>
+				</div>
+                <form class="login-form">
+        			<span>Номер карты</span>
+        			<p>
+						<img src="/img/form_card.png" alt="" />
+						<input class="card_form card_mask" type="text" name="card" style="margin-left:27px;" />
+					</p>
+        			<span>Пароль</span>
+        			<p>
+						<img src="/img/form_key.png" alt="" />
+						<input class="password_form" type="password" name="password" />
+					</p>
+        			<input class="form_button1" type="submit" value="Войти в личный кабинет" />
+        			<a id="forgot" href="javascript:void(0)">Забыли пароль?</a>
+        		</form>
+    		</div>
+    	</div>
+    	<div id="login_form2">
+    		<div id="login_content2">
+    			<form class="forgot-form">
+                    <div class="errors" style="position: absolute; margin-top:10px; width: 340px"></div>
+    				<span>Номер карты</span>
+        			<p>
+						<img src="/img/form_card.png" alt="" />
+						<input class="card_form card_mask" type="text" name="card" style="margin-left:27px;" />
+					</p>
+    				<input class="form_button1" type="submit" value="Отправить пароль" />
+    			</form>
+    		</div>
+    	</div>
+        
+    
+	<div id="panel" style="position: fixed; top:80px;z-index: 9999;"></div>
+	<header id="header" class="header" role="banner">
+		<div class="wrap">
+			<nav class="navigation" role="navigation">
+				<a href="/"><img src="/img/line3.png" alt="Меню" width="39" height="26"/><span>Меню</span></a>
+				<ul id="menu" class="menu">
+					<li class="menu_i" >
+						<a href="#branding" class="topLink">О нас</a>
+					</li>
+					<li class="menu_i" >
+						<a href="#cat"  class="topLink">Коллекция</a>
+					</li>
+					<li class="menu_i">
+						<a href="#dog"  class="topLink">Программа привелегий</a>
+					</li>
+					<li class="menu_i">
+						<a href="#shopsi"  class="topLink">Наши магазины</a>
+					</li>
+					<li class="menu_i">
+						<a href="#writing"  class="topLink">Обратная связь</a>
+					</li>					
+				</ul>
+			</nav>
+			<a href="/" class="logo"><img src="/img/logo.png" alt="logo" /></a>
+			<a class="login" href="javascript:void(0)" id="login">Личный кабинет </a>  
+			<a class="exit" href="javascript:void(0)" id="exit">выход</a> 
+		</div>
+	</header>
+
+	<section id="promo_akciya">
+		<div class="wrap">
+			<div id="slides">
+			  <a href="#write_us"><img src="/img/slides/slide-1.png" alt=""  /></a>
+			  <img src="/img/slides/slide-2.png" alt="" />
+			  <img src="/img/slides/slide-3.png" alt="" />
+			  <a href="#" class="slidesjs-previous slidesjs-navigation"><img src="/img/arrow-prev.png" alt="" /></a>
+			  <a href="#" class="slidesjs-next slidesjs-navigation"><img src="/img/arrow-next.png" alt="" /></a>
+			</div>
+			
+		</div>
+	
+	</section>
+	
+	<div id="branding"></div>
+	<section id="brand">
+		<div class="brand">
+			<p class="brand_title">
+				Испанский ювелирный бренд UNOde50
+				<ul>
+					<li class="brand_li">дерзкий дизайн</li>
+					<li class="brand_li">уникальность </li>
+					<li class="brand_li"> 100% ручная работа</li>
+				</ul>
+			</p>	
+			
+			<p class="brand_title">
+				<ul class="brand_img">
+					<li ><img alt="" src="/img/brand1.jpg " /></li>
+					<li ><img alt="" src="/img/brand2.jpg " /></li>
+					<li ><img alt="" src="/img/brand3.jpg " /></li>
+				</ul>
+			</p>
+		</div>
+		<a href="javascript:void(0)" class="open"> Подробнее</a>
+		
+		
+		
+		<section class="wrap_main" style="display:none;">
+		<a href="javascript:void(0)" class="close"> Закрыть</a>
+			<div class="left_block">
+				<p>
+					Компания была основана в конце 90х гг. группой дизайнеров, которые стремились изменить существующие шаблоны в ювелирном деле. Дизайнеры начали разрабатывать изделия с уникальным дизайном, который стал узнаваемым за особым стилем и инновационностью по сравнению с действовавшими в то время традиционными подходами к созданию украшений. Смешение традиций и современности легло в основу развития нового бренда, который со временем<br /> стал символизировать дух мастерства и эксклюзивность.
+				</p>
+				<p>
+					Компания с семейными традициями на сегодняшний день имеет более 3000 точек продаж и 100 фирменных магазинов в 20 странах мира.
+				</p>
+				<p>
+					Символ бренда - крошечный металлический замок ручной работы, который
+					должен был охранять уникальность дизайна изделий, выпускаемых брендом.
+				</p>				
+			</div>
+			<div class="right_block">
+				<p>
+					Свою историю бренд начал с выпуска эксклюзивных изделий лимитированным
+					тиражом 50 единиц на весь мир. Эта философия воплотилась в названии бренда UNOde50 (“один из пятидесяти”). Со временем бренд отошел от этой философии, однако в коллекциях все еще остаются уникальные модели, выпускаемые ограниченным объемом.
+				</p>
+				<p>
+					Все изделия производятся на фабрике в Мадриде.
+				</p>
+				<p>
+					<img class="hand" alt="" src="/img/hand.jpg" />
+				</p>
+
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+	</section>
+	<div id="cat"></div>
+	<section id="join">
+		КОЛЛЕКЦИИ
+	</section>
+	
+	<section class="take">
+		
+		<div class="img_wrap">
+			<img src="/img/woman.jpg" alt="" />
+		</div>
+		<a href="javascript:void(0)" class="open">Подробнее</a>
+		
+		<section class="wrap_main" style="display:none;">
+			<a href="javascript:void(0)" class="close">Закрыть</a>
+			<div class="left_block_product">
+				<img src="/img/clock.jpg" alt="" />
+			</div>
+			<div class="right_block_product">
+				<p>
+				
+				
+					Традиции и современность легли в основу уникальной коллекции для женщин, которая отличается дизайном и качеством, особым мастерством исполнения и дает своей обладательнице ощущение эксклюзивности. 
+				</p>
+			</div>
+			<div class="clear"></div>
+		</section>
+		
+	</section>
+	
+
+	<section class="take">
+		
+		<div class="img_wrap">
+
+			<img src="/img/man.jpg" alt="" />
+		</div>
+		<a href="javascript:void(0)" class="open">Подробнее</a>
+		
+		<section class="wrap_main" style="display:none;">
+		<a href="javascript:void(0)" class="close">Закрыть</a>
+			<div class="left_block_product">
+				<img src="/img/maning.jpg" alt="" />
+			</div>
+			<div class="right_block_product">
+				<p>
+					Есть нечто, что объединяет все наши творения, - баланс между смелостью дизайна и элегантностью, вниманием к деталям и эксклюзивным ДНК бренда, которые составляют основу нашей коллекции для мужчин.
+				</p>
+
+						
+			</div>
+			<div class="clear"></div>
+					
+		</section>
+	</section>		
+
+	<section class="take">
+		
+		<div class="img_wrap">
+			<img src="/img/other.jpg" alt="" />
+		</div>
+		<a href="javascript:void(0)" class="open">Подробнее</a>
+		
+		<section class="wrap_main" style="display:none;">
+		<a href="javascript:void(0)" class="close">Закрыть</a>
+			<div class="left_block_product">
+				<img src="/img/others.jpg" alt="" />
+			</div>
+			<div class="right_block_product">
+				<p style="margin-bottom:20px;">
+					Остроумие и оригинальность помогли воплотить дух бренда UNOde50 в коллекции аксессуаров. Ищите идеальный подарок? Тогда это то, что вам нужно.
+				</p>
+				<p style="padding-top:0;">
+					<img src="/img/closeding.jpg" alt="" />
+				</p>
+						
+			</div>
+			<div class="clear"></div>
+					
+		</section>
+	</section>
+	<div id="dog"	></div>
+	<section id="program_privel">
+		<div  class="red">
+			<p>Программа привилегий UNOde50</p>
+		</div>
+		<section class="take">
+			<div class="img_wrap">
+				<img src="/img/logo_section.png" alt="" />
+			</div>
+			<div class="invite">
+				<p>
+				Приглашаем вас стать участниками Программы Привилегий сети магазинов <br>
+				UNOde50 для наших постоянных покупателей. <br>
+				Совершая покупки в магазинах UNOde50 (ООО «реСтор»), <br>
+				вы получаете часть суммы ваших покупок на подарочную банковскую карту <br>
+				и можете порадовать себя и близких любимыми новинками в будущем.
+				</p>
+			</div>
+		</section>	
+		<a href="javascript:void(0)" class="osnovnii_pravila">Основные правила программы</a>
+		<section class="wrap_main hide" style="display:none;">
+			<p>
+			Стать участником программы может любой покупатель наших магазинов независимо от суммы покупки. Для участия в программе необходимо заполнить анкету, дождаться смс илиe-mail сообщения с паролем и использовать его для входа в личный кабинет на сайте www.up-and-run.ru
+			</p>
+			<p>
+			Каждый потраченный рубль конвертируется в бонус (1 рубль = 1 бонусному рублю) и идет к накоплению. Исключение составляют покупки по акциям и распродажам.
+			</p>
+			<p>
+			Бонусы активируются через 30 дней, не считая дня совершения покупки.
+			</p>
+			<p>
+			Бонусные рубли могут быть начислены как за покупки, так и за дополнительные действия, привлечение друга к участию в прогамме.
+			</p>
+			<p>
+			При достижении порога 25 000 бонусных рублей участник программы получает вознаграждение в виде подарочной карты номиналом 1 500 руб. Информация о возможности получения данного вознаграждения высылается участнику по указанному им в анкете способу коммуникации (смс или e-mail) и публикуется в Личном кабинете.
+			</p>			
+			<p>
+			Подарочную карту можно получить в любом магазине сети в течение 60 дней после получения уведомления. Баланс карты участника программы при этом уменьшается на 25 000 руб. Получение карты спустя 60 дней после уведомления не возможно, карта аннулируется.
+			</p>			
+			<p>
+			При использовании подарочной карты в нашем магазине для последующей покупки участник получает на свой счет соразмерный номиналу карты бонус в размере 1 500 бонусных рублей.
+			</p>
+			<p>
+			Карта является неименной. Однако выдача подарочной карты возможна только владельцу карты, чьи данные были заполнены в анкете.
+			</p>			
+			<a href="javascript:void(0)" class="close">Закрыть</a>		
+		</section>
+	</section>	
+	<div id="shopsi"></div>
+	<section id="our_shops">
+	
+	<div class="our_shop">
+		<p>Наши магазины<p>
+    </div>   
+        
+
+	<section class="wrap_main">
+	<table>
+                	                <tr>
+					<td class="first"><span>Москва</span></td>
+					<td>
+						<p class="right_table">
+						<strong>ТРЦ &QUOT;РИО&QUOT;</strong> <br /> 
+						Дмитровское ш., 163а<br /> 
+						+7 (495) 988-03-38<br /> 
+						prenatal.rio@inventive.ru<br /> 
+						</p>
+					</td>
+				</tr>	
+                                 <tr>
+					<td class="first"></td>
+					<td>
+						<p class="right_table">
+						<strong>ТРК АТРИУМ</strong>     <span class="fast">скоро открытие</span>  <br /> 
+						г. Москва, ул. Земляной вал, д. 33, 4 этаж<br /> 
+						+7 (495) 790-70-58<br /> 
+						pr.atrium.msk@inventive.ru <br /> 
+						</p>
+					</td>
+				</tr>	
+                <tr>
+					<td class="first"></td>
+					<td>
+						<p class="right_table">
+						<strong>Вегас Крокус-Сити</strong>     <span class="fast">скоро открытие</span> <br /> 
+						66 км МКАД<br/> 
+						+7 (495) 545-45-45<br /> 
+						prenatal.rio@inventive.ru<br /> 
+						</p>
+					</td>
+				</tr>
+                <tr>
+					<td class="first"></td>
+					<td>
+						<p class="right_table">
+						<strong>ТРЦ Золотой Вавилон</strong> <span class="fast">скоро открытие</span>  <br>
+						Проспект Мира, 211<br/> 
+						+7 (495) 545-45-45<br /> 
+						prenatal.rio@inventive.ru<br /> 
+						</p>
+					</td>
+				</tr>				
+                 <tr>
+					<td class="first"><span>Санкт-Петербург</span></td>
+					<td>
+						<p class="right_table">
+						<strong>ТРК &QUOT;ГРАНД КАНЬОН&QUOT;</strong>     <span class="fast">скоро открытие</span> <br /> 
+						Проспект Энгельса, д. 154<br /> 
+						+7 (911) 115-01-78 <br /> 
+						prenatal.rio@inventive.ru<br /> 
+						</p>
+					</td>
+				</tr>	
+
+                             </table>
+			</section>	
+	</section>
+	
+	<div id="writing"></div>
+	<section id="write_us">
+		<div class="write_title">
+			<p>ПИШИТЕ НАМ</p>
+		</div>
+		<section class="wrap_main">		
+		<p>Если хотите поблагодарить наших сотрудников или, наоборот, сообщить о недопустимом обращении с вами,
+			напишите нам. <br />Мы гарантируем конфиденциальность ваших персональных данных.</p>
+		<form id="feedback-form">
+			<div class="in_form">
+				<ul>
+					<li>
+						<span>Имя</span>
+						<input type="text" name="name" />
+					</li>	
+					<li class="second">
+						<span>Город</span>
+						<input type="text" name="city" id="autocomplete_city" />
+					</li>		
+					<li>
+						<span>E-mail</span>
+						<input type="text" name="email" />
+					</li>
+					<li class="second">
+						<span>Мобильный телефон</span>
+						<input type="text" name="phone" class="phone_mask" />
+					</li>
+				</ul>
+				<div class="clear"></div>
+				<p>Пожалуйста, укажите один из способов контакта с вами, иначе мы не сможем связаться с вами и ответить.</p>
+				<ul>
+					<li>
+						<span>Тема</span>
+						<input type="text" name="subject" />
+					</li>	
+					<li class="second">
+						<span>Категория</span>
+						<div class='selectBox category'>
+							<input type="hidden" name="category" class="chosen category" value="" />
+							<strong class='selected main_page'></strong>
+							<strong class='selectArrow'><img src="/img/arrows.jpg" alt="" /></strong>
+							<div class="selectOptions main_page " >
+								<strong class="selectOption" value="Общие вопросы">Общие вопросы</strong>
+								<strong class="selectOption" value="Пожелания и рекомендации">Пожелания и рекомендации</strong>
+								<strong class="selectOption" value="Благодарность" >Благодарность</strong>
+								<strong class="selectOption" value="Жалоба" >Жалоба</strong>
+								<strong class="selectOption" value="Бонусная карта" >Бонусная карта</strong>
+							</div>
+						</div>
+					</li>
+					<li style="width:100%;">
+						<span>Сообщение</span>
+						<textarea rows="10" cols="45" name="message"></textarea>
+					</li>
+				</ul>
+				<div class="clear"></div>
+				<p style="text-align:center; margin-bottom:15px;">Прикрепите файлы к сообщению формы.<br />
+				Максимальный размер файла – 1 мб. Максимальное количество – 5 штук.</p>
+				<div class="clear"></div>
+                <div id="fileupload">
+    				<ul class="upload_file">
+    				</ul>
+    				<div class="clear"></div>
+    				<a href="#" class="add_img" onclick="if($('.upload_file li').length<6){ $('input[name=myfile]').click(); } return false;"> добавить файл</a>
+                    <span class="upload_image_ajax"></span>
+                </div>
+                <div class="errors"></div>
+			</div>
+			<input type="submit" value="Написать" class="submit" />
+		</form>
+		</section>
+	</section>
+	<section id="bottom">
+		<section class="form_wrap">
+			<a href="/" id="logo"> <img src="http://prenatal.ru/bitrix/templates/prenatal/img/logo.png" alt="logo" /></a>
+			<div id="copyright">© 2014. Inventive Retail Group</div>
+			<div class="clear"></div>
+		</section>
+	</section>
+    
+    <div class="hide-layout"></div>
+</body>
+</html>

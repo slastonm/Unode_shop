@@ -1,0 +1,179 @@
+section#write_us form li span.ui-helper-hidden-accessible {
+    display: none; 
+}
+
+.ui-autocomplete {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 9998;
+    display: none;
+    width: 368px;
+    border-right: 1px solid #9db0c5;
+    border-bottom: 1px solid #9db0c5;
+    border-left: 1px solid #9db0c5;
+    background-color: #fff; 
+}
+
+.ui-menu-item a {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: "EffraCorp-Medium", "Arial Black", "Arial Bold", Arial, sans-serif;
+    display: block;
+    border-bottom: 3px solid #f2e0d2;
+    width: 100%;
+    font-weight: normal;
+    padding: 5px 15px;
+    cursor: pointer;
+    color: #555D4B;
+    border-bottom: 0;
+}
+
+.ui-menu-item a.ui-state-focus {
+    background: #fec2d9;
+    color: #000;
+    opacity: .5; 
+}
+
+.mr-2{
+    margin-right: 2rem;
+}
+.mt-0{
+    margin-top:0 !important;
+}
+.mb-0{
+    margin-bottom:0 !important;
+}
+.mt-20{
+    margin-top:20px !important;
+}
+.mt-10{
+    margin-top:10px !important;
+}
+.mb-10{
+    margin-bottom:10px !important;
+}
+.mb-20{
+    margin-bottom:20px !important;
+}
+
+
+/* ========== change ============== */
+.radio.checked{
+    background: url(/img/yes.jpg) left top no-repeat;
+}
+.radio.unchecked{
+    background: url(/img/yes.jpg) left -50px no-repeat;
+}
+.radio.checked.active{
+    background: url(/img/yes.jpg) right top no-repeat;
+}
+.radio.unchecked.active{
+    background: url(/img/yes.jpg) right -50px no-repeat;
+}
+
+
+
+.radio2.checked{
+    background: url(/img/mobilee.jpg) left top no-repeat;
+}
+.radio2.unchecked{
+    background: url(/img/mobilee.jpg) left -50px no-repeat;
+}
+.radio2.checked.active{
+    background: url(/img/mobilee.jpg) right top no-repeat;
+}
+.radio2.unchecked.active{
+    background: url(/img/mobilee.jpg) right -50px no-repeat;
+}
+
+
+.sex.men{
+    background: url(/img/sprite.jpg) right top no-repeat;
+}
+.sex.women{
+    background: url(/img/sprite.jpg) right -50px no-repeat;
+}
+.sex.men.active{
+    background: url(/img/sprite.jpg) left top no-repeat;
+}
+.sex.women.active{
+    background: url(/img/sprite.jpg) left -50px no-repeat;
+}
+
+/* =======================  and ====================*/
+.birthday_ul a.sex.girl{
+    background: url(img/chilldrens.png) left top no-repeat;
+    margin-left:0;
+}
+
+.birthday_ul a.sex.boy{
+    background: url(img/chilldrens.png) left -50px no-repeat;
+}
+
+.birthday_ul a.sex.girl.active{
+    background: url(img/chilldrens.png) right top no-repeat;
+    margin-left:0;
+}
+
+.birthday_ul a.sex.boy.active{
+    background: url(img/chilldrens.png) right -50px no-repeat;
+}
+
+.errors p {
+    margin: 0 auto;
+    width: 100%;
+    padding: 5px 0;
+    background: #a86daa;
+    color: #fff !important;
+    font-size: 17px;
+    line-height: 21px;
+    font-family: "EffraCorp-Medium", "Arial Black", "Arial Bold", Arial, sans-serif;
+    text-align: center;
+}
+
+.errors p {
+    margin: 0 auto;
+    padding: 5px 0;
+    background: none;
+    /*color: #ed2b74 !important;*/
+    font-size: 17px;
+    line-height: 21px;
+    font-family: "EffraCorp-Medium", "Arial Black", "Arial Bold", Arial, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.errors.red p{
+    color: #ed2b74 !important;
+}
+
+.forgot-form .errors p
+{
+    background: #a86daa;
+}
+
+section#write_us form p{
+    padding-left:10px;
+}
+section#promo_akciya{
+	background:#fdf7eb;
+	padding:70px 0 15px;
+	margin-top:65px;
+	margin-bottom:10px;
+}
+section#brand{
+	margin-top:0;
+
+}

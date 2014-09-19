@@ -1,0 +1,72 @@
+section#promo_akciya{
+	background:#f4f1e8;
+	padding:40px 0 40px;
+	margin-top:139px;
+	margin-bottom:0px;
+}
+section#promo_akciya  .wrap{
+	width:940px;
+	height:600px;}
+	
+
+section#brand{
+	margin-top:0;
+
+}
+
+
+
+#slides {
+	display: none;
+	position:relative;
+	overflow:visible!important;
+}
+
+#slides .slidesjs-navigation {
+	margin-top:3px;
+}
+
+#slides .slidesjs-previous {
+	position:absolute;
+	left:-54px;
+	top:275px;
+}
+
+#slides .slidesjs-next {
+	position:absolute;
+	right:-54px; 
+	top:275px;
+}
+
+.slidesjs-pagination {
+	margin:25px auto 0;
+	list-style: none;
+	width:75px;
+}
+
+.slidesjs-pagination li {
+	float: left;
+	margin: 0 1px;
+}
+
+.slidesjs-pagination li a {
+	display: block;
+	width: 18px;
+	height: 0;
+	padding-top: 17px;
+	background-image: url(/slider/pagination.png);
+	background-position: 0 0;
+	float: left;
+	overflow: hidden;
+}
+
+.slidesjs-pagination li a.active,
+.slidesjs-pagination li a:hover.active {
+	background-position: 0 -19px
+}
+
+.slidesjs-stop, .slidesjs-play {display:none!important;}
+
+
+
+

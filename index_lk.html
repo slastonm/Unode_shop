@@ -1,0 +1,354 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>UNO de 50</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="robots" content="index, follow" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+	
+	<link href="/css/popup.css" type="text/css"  rel="stylesheet" />
+    <link rel="stylesheet" media="screen" href="/css/style.css" type="text/css" />
+    <link rel="stylesheet" media="screen" href="/css/project.css" type="text/css" />
+    <link rel="stylesheet" media="screen" href="/slider.css" type="text/css" />
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	
+		
+	<script src="/js/jquery.slides.min.js"></script>
+	<script>
+		$(function() {
+		  $('#slides').slidesjs({
+			width: 940,
+			height: 600,
+			pagination: false,
+			navigation: false,
+			play: {
+			  active: true,
+			  auto: true,
+			  interval: 4000,
+			  swap: true
+			}
+		  });
+		});
+	</script>
+  
+    <script type='text/javascript' src="/js/script.js"></script>
+    <script type='text/javascript' src="/js/project.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <script src='/js/jquery-ui-1.10.js'></script>
+    <script src="/js/jquery.cycle2.js"></script>
+    <script src="/js/jquery.cycle2.swipe.js"></script>
+    <script src="/js/jquery.maskedinput.js"></script>
+    <script src="/js/jquery.arcticmodal-0.3.js"></script>
+
+</head>
+<body>
+        <div id="login_form">
+    		<div id="login_content">
+				<div class="error">
+					<p>Неверный номер карты или пароль</p>
+				</div>
+                <form class="login-form">
+        			<span>Номер карты</span>
+        			<p>
+						<img src="/img/form_card.png" alt="" />
+						<input class="card_form card_mask" type="text" name="card" style="margin-left:27px;" />
+					</p>
+        			<span>Пароль</span>
+        			<p>
+						<img src="/img/form_key.png" alt="" />
+						<input class="password_form" type="password" name="password" />
+					</p>
+        			<input class="form_button1" type="submit" value="Войти в личный кабинет" />
+        			<a id="forgot" href="javascript:void(0)">Забыли пароль?</a>
+        		</form>
+    		</div>
+    	</div>
+    	<div id="login_form2">
+    		<div id="login_content2">
+    			<form class="forgot-form">
+                    <div class="errors" style="position: absolute; margin-top:10px; width: 340px"></div>
+    				<span>Номер карты</span>
+        			<p>
+						<img src="/img/form_card.png" alt="" />
+						<input class="card_form card_mask" type="text" name="card" style="margin-left:27px;" />
+					</p>
+    				<input class="form_button1" type="submit" value="Отправить пароль" />
+    			</form>
+    		</div>
+    	</div>
+        
+    
+	<div id="panel" style="position: fixed; top:80px;z-index: 9999;"></div>
+	<header id="header" class="header" role="banner">
+		<div class="wrap">
+			<nav class="navigation" role="navigation">
+				<a href="/"><img src="/img/menu.png" alt="Меню" width="39" height="26"/><span>Меню</span></a>
+				<ul id="menu" class="menu lk">
+
+					<li class="menu_i">
+						<a href="#globall_datas">Основные данные	</a>
+					</li>
+					<li class="menu_i">
+						<a href="#dop_infos">Дополнительная информация</a>
+					</li>
+					<li class="menu_i">
+						<a href="#operation_historys">История операций</a>
+						
+					</li>
+					<li class="menu_i">
+						<a href="#bonus_historys">История вознаграждений</a>
+						
+					</li>					
+					
+				</ul>
+			</nav>
+			<a href="/" class="logo"><img src="/img/logo.png" alt="logo" /></a>
+			<a class="login" href="javascript:void(0)" id="login">Личный кабинет </a> 
+			<a class="exit" href="javascript:void(0)" id="exit">выход</a>
+		</div>
+	</header>
+	
+	<section id="main_info">
+		<div class="img_wrap">
+			<img id="top_img" src="img/title_img.jpg" alt="" />
+		</div>
+		<form class="form-user-edit">
+			<section class="form_wrap" id="globall_data">
+				<div id="globall_datas"></div>
+				<h2>Основные данные<br /> участника программы</h2>
+				<div class="left_colum">
+					<ul class="full_size">
+						<li>
+							<span>Номер карты<sup>*</sup></span>
+							<input id="card_lk" class="card_mask" type="text" name="cardNumber"  value="" />
+						</li>	
+						<li>
+							<span>Имя<sup>*</sup></span>
+							<input class="name" type="text" name="firstName" value="Мария (ТЕСТ)" />
+						</li>		
+						<li>
+							<span>E-mail</span>
+							<input class="e-mail" type="text" name="email" value="trushkina@inventive.ru"/>
+						</li>
+					</ul>
+					<!-- +++++++++++++++   addd +++++++++++++++++++ -->
+					<ul class="half_size">
+						<li>
+							<span>E-mail <br />сообщения по программе</span>
+							<a href="#" class="radio checked mr-2 active" data-name="favorChannel_email" data-value="email"></a>
+							<a href="#" class="radio unchecked " data-name="favorChannel_email" data-value="off"></a>
+                            <input type="hidden" name="favorChannel_email" value=""/>
+						</li>
+						<li>
+							<span>Пол<sup>*</sup></span>
+                            <a href="#" class="sex men mr-2 " data-name="sex" data-value="m"></a>
+							<a href="#" class="sex women active" data-name="sex" data-value="f"></a>
+                            <input type="hidden" name="sex" value="f"/>
+						</li>						
+					</ul>
+					
+					<!-- +++++++++++++++   addd +++++++++++++++++++ -->					
+				</div>
+				
+				<div class="right_colum">
+					<ul class="full_size">
+						<li>
+							<span>Пароль<sup>*</sup></span>
+							<input class="password_lk" type="password" name="password"  value="" />
+						</li>	
+						<li>
+							<span>Фамилия<sup>*</sup></span>
+							<input class="last_name" type="text" name="lastName"  value="Трушкина"/>
+						</li>		
+						<li>
+							<span>Мобильный телефон</span>
+							<input class="phone __phone" type="text" name="phone"  value="+7(917) 516 6740"/>
+						</li>
+					</ul>
+					
+
+					
+					
+					<!-- +++++++++++++++   addd +++++++++++++++++++ -->
+					
+					<ul class="half_size">
+						<li>
+							<span>Sms <br />сообщения по программе</span>
+                            <a href="#" class="radio checked mr-2 active" data-name="favorChannel_sms" data-value="sms"></a>
+							<a href="#" class="radio unchecked " data-name="favorChannel_sms" data-value="off"></a>
+                            <input type="hidden" name="favorChannel_sms" value=""/>
+						</li>
+                        <li class="small_margin">
+							<span>Подписка <br />на маркетинговые акции</span>
+                            <a href="#" class="radio checked mr-2 active" data-name="subscription" data-value="1"></a>
+							<a href="#" class="radio unchecked " data-name="subscription" data-value="0"></a>
+                            <input type="hidden" name="subscription" value="1"/>
+						</li>						
+					</ul>	
+
+					<!-- +++++++++++++++   addd +++++++++++++++++++ -->
+
+					
+				</div>
+				<div class="clear"></div>
+				<p id="atention1">* Обязательные для заполнения поля</p>
+				<p id="atention">Один из контактов, e-mail или номер мобильного телефона, является обязательным</p>
+				
+				<div class="clear"></div>
+			</section>
+            <div class="clear"></div>
+            <div class="errors_red"></div>
+            <input class="form_button" type="submit" value="Сохранить" />
+        </form>
+	</section>
+	
+	<section id="dop_info">
+		<div id="dop_infos"></div>
+		<form class="form-addFields">
+			<section class="form_wrap">
+				<h2>Дополнительная информация</h2>
+				<div class="left_colum">
+					<ul class="full_size">
+						<li>
+							<span>Отчество</span>
+                            <input class="otchestvo" type="text" name="12" value=""  placeholder="Рустамовна" />
+						</li>	
+						<li style="margin-top:52px;">
+							<span>Ваш любимый ювелирный бренд</span>
+                            <div class='selectBox select_lk'>
+							    <input type="hidden" name="13" class="chosen favourite" value="" />
+        						<strong class='selected'></strong>
+        						<strong class='selectArrow'><img src="/img/arrow3.jpg"></strong>
+        						<div class="selectOptions">                                                                                   		<strong class="selectOption" value="Pandora">Pandora</strong>
+									<strong class="selectOption" value="Tous">Tous</strong>
+									<strong class="selectOption" value="Guess">Guess</strong>
+									<strong class="selectOption" value="Swarovski">Swarovski</strong>
+                                </div>
+                             </div>
+						</li>
+					</ul>
+				</div>
+				<div class="right_colum">
+					<ul class="full_size">
+						<li>
+							<span>Дата рождения</span>
+                            <input class="cl_birthday" type="text" name="12" value="" placeholder="ДД ММ ГГГГ" />	   
+						</li>	
+					</ul>
+				</div>
+				<div class="clear"></div>
+                <div class="errors"></div>
+				
+				<input class="form_button form-user-editdop-button" type="submit" value="Сохранить" />
+			</section>
+		</form>		
+	</section>	
+	<div id="operation_historys"></div>
+	<section id="operation_history">
+		<section class="form_wrap">
+			<h2>История операций по карте</h2>
+			<table>
+				<thead>
+					<tr  class="history_row">
+						<th style="padding-left:25px;" width="125">Дата<br /> покупки</th>
+						<th width="115">Тип<br /> операции</th>
+						<th width="65">Товары</th>
+						<th width="130" align="center">Сумма</th>
+						<th width="95">Акция</th>
+						<th width="120">Магазин</th>
+						<th style="text-align:right;">Ожидаемые <br /> бонусы</th>
+						<th style="text-align:right;">Начисленные<br /> бонусы</th>
+						<th width="21px;"></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="first">
+						<td style="padding-left:25px;">22.05.13</td>
+						<td>Покупка</td>
+						<td  align="center">7</td>
+						<td  align="center">223 470</td>
+						<td>#Стань</td>
+						<td>Гранд Каньон</td>
+						<td style="text-align:right;">2000</td>
+						<td style="text-align:right;">2000</td>
+					</tr>	
+					<tr  class="two">
+						<td style="padding-left:25px;">22.05.13</td>
+						<td>Покупка</td>
+						<td  align="center">7</td>
+						<td  align="center">223 470</td>
+						<td>#Стань</td>
+						<td>Гранд Каньон</td>
+						<td style="text-align:right;">2000</td>
+						<td style="text-align:right;">2000</td>
+					</tr>	
+					<tr class="last">
+						<td style="text-align:left; padding-left:25px;" colspan="2" >Текущий баланс</td>
+						<td  ></td>
+						<td  align="center"></td>
+						<td ></td>
+						<td ></td>						
+						<td style="text-align:right;" >4000</td>
+						<td style="text-align:right;">4000</td>
+					</tr>				
+				</tbody>
+			</table>
+		</section>
+	</section>
+
+	<div id="bonus_historys"></div>
+	<section id="bonus_history">
+		<section class="form_wrap">
+			<h2>История вознаграждений по программе</h2>
+			<table>
+				<thead>
+					<tr class="history_row">
+						<th style="padding-left:20px;" width="180">Дата<br /> получения</th>
+						<th style="padding-right:20px;">КОД <br>ПОДТВЕРЖДЕНИЯ</th>
+						<th width="200">Номер<br />Подарочной<br />карты</th>
+						<th width="150">Сумма</th>
+						<th style="padding-right:20px;">Магазин</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr class="first">
+						<td  style="padding-left:20px;">22.05.13</td>
+						<td>123456</td>
+						<td>1234578959550503</td>
+						<td>5000</td>
+						<td>Гранд Каньон</td>
+					</tr>	
+					<tr class="two">
+						<td  style="padding-left:20px;">22.05.13</td>
+						<td >123456</td>
+						<td>1234578959550503</td>
+						<td>5000</td>
+						<td>Гранд Каньон</td>
+					</tr>	
+				</tbody>
+			</table>
+		</section>
+	</section>		
+	    
+    
+    
+    
+
+	<section id="bottom">
+		<section class="form_wrap">
+			<a href="/" id="logo"> <img src="http://prenatal.ru/bitrix/templates/prenatal/img/logo.png" alt="logo" /></a>
+			<div id="copyright">© 2014. Inventive Retail Group</div>
+			<div class="clear"></div>
+		</section>
+	</section>
+    
+    <div class="hide-layout"></div>
+</body>
+</html>
